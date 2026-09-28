@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <AssemblyName>StorageXray</AssemblyName>
+    <RootNamespace>StorageXray.App</RootNamespace>
+    <Version>0.2.1</Version>
+    <Product>StorageXray</Product>
+    <Description>See what is filling your drive.</Description>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    <PublishTrimmed>false</PublishTrimmed>
+  </PropertyGroup>
+  <ItemGroup><ProjectReference Include="../StorageXray.Core/StorageXray.Core.csproj" /></ItemGroup>
+</Project>

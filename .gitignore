@@ -1,0 +1,10 @@
+**/bin/
+**/obj/
+**/*_wpftmp.csproj
+.vs/
+release/
+package/
+*.user
+*.suo
+*.zip
+*.log

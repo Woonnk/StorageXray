@@ -1,0 +1,107 @@
+StorageXray 0.2 validation
+
+FINAL FUNCTIONAL RUN
+PASS Scanner aggregates nested files and empty folders without losing bytes
+PASS Scanner skips symlinks and cannot escape the selected tree
+PASS Cancelled scan reports partial state
+PASS Full-file hashing distinguishes same-size files with matching samples
+PASS System, app, cloud, and tiny files are excluded from duplicates
+PASS Planner does not also suggest the preserved duplicate copy
+PASS Changed files are refused even when their filenames are unchanged
+PASS Duplicate cleanup detects content changes with preserved size and timestamp
+PASS Missing keeper blocks duplicate recycling
+PASS Cleanup rejects duplicate requests and protected paths
+PASS History compares the same root and preserves baseline on cancellation
+PASS CSV quotes paths, Unicode, and spreadsheet formula prefixes
+PASS Treemap conserves area, proportions, and never overlaps
+PASS Empty folders and zero-weight maps remain valid
+PASS File, folder, search and sorted pages cover the inventory exactly
+PASS Serial and parallel traversal agree on all folder totals
+PASS Cloud roots and cloud subtrees are rejected; developer files still count
+PASS Linked ancestors are refused even when the selected root is below the link
+PASS Lazy folder enumeration failure ends that branch and preserves others
+PASS Progress reports are count-batched and always include final totals
+PASS Cancellation during parallel traversal drains frames and commits a consistent partial index
+PASS Duplicate groups larger than a page preserve exactly one keeper
+PASS Stopped duplicate search publishes no sample-only matches
+PASS The scan index does not scan itself and is deleted on disposal
+PASS History avoids materializing an unbounded shallow-folder inventory
+
+25 passed; 0 failed. Native WPF and Windows Shell recycling require Windows validation.
+
+SYNTHETIC METADATA STRESS RUN
+PASS Scanner aggregates nested files and empty folders without losing bytes
+PASS Scanner skips symlinks and cannot escape the selected tree
+PASS Cancelled scan reports partial state
+PASS Full-file hashing distinguishes same-size files with matching samples
+PASS System, app, cloud, and tiny files are excluded from duplicates
+PASS Planner does not also suggest the preserved duplicate copy
+PASS Changed files are refused even when their filenames are unchanged
+PASS Duplicate cleanup detects content changes with preserved size and timestamp
+PASS Missing keeper blocks duplicate recycling
+PASS Cleanup rejects duplicate requests and protected paths
+PASS History compares the same root and preserves baseline on cancellation
+PASS CSV quotes paths, Unicode, and spreadsheet formula prefixes
+PASS Treemap conserves area, proportions, and never overlaps
+PASS Empty folders and zero-weight maps remain valid
+PASS File, folder, search and sorted pages cover the inventory exactly
+PASS Serial and parallel traversal agree on all folder totals
+PASS Cloud roots and cloud subtrees are rejected; developer files still count
+PASS Linked ancestors are refused even when the selected root is below the link
+PASS Lazy folder enumeration failure ends that branch and preserves others
+PASS Progress reports are count-batched and always include final totals
+PASS Cancellation during parallel traversal drains frames and commits a consistent partial index
+PASS Duplicate groups larger than a page preserve exactly one keeper
+PASS Stopped duplicate search publishes no sample-only matches
+PASS The scan index does not scan itself and is deleted on disposal
+PASS History avoids materializing an unbounded shallow-folder inventory
+STRESS records=1000000 elapsed_seconds=11.80 retained_managed_delta_bytes=17904 observed_peak_rss_bytes=205553664 index_disk_bytes=437349856
+PASS One-million-record disk inventory stays bounded through paging and planning
+
+26 passed; 0 failed. Native WPF and Windows Shell recycling require Windows validation.
+
+FINAL WINDOWS COMPILE
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  StorageXray.App -> /workspace/scratch/620b9f18ec7e/storagexray/src/StorageXray.App/bin/Release/net10.0-windows/StorageXray.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:05.70
+
+Bundle contents independently decompressed and compared with staged inputs.
+Windows UI, OS SQLite loading, and native recycling require Windows validation.
+
+0.2.1 DROPDOWN PATCH: XAML/application build
+
+Welcome to .NET 10.0!
+---------------------
+SDK Version: 10.0.401
+
+----------------
+Installed an ASP.NET Core HTTPS development certificate.
+To trust the certificate, run 'dotnet dev-certs https --trust'
+Learn about HTTPS: https://aka.ms/dotnet-https
+
+----------------
+Write your first app: https://aka.ms/dotnet-hello-world
+Find out what's new: https://aka.ms/dotnet-whats-new
+Explore documentation: https://aka.ms/dotnet-docs
+Report issues and find source on GitHub: https://github.com/dotnet/core
+Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cli
+--------------------------------------------------------------------------------------
+  Determining projects to restore...
+  Restored /workspace/scratch/620b9f18ec7e/storagexray/src/StorageXray.App/StorageXray.App.csproj (in 101 ms).
+  1 of 2 projects are up-to-date for restore.
+  StorageXray.App -> /workspace/scratch/620b9f18ec7e/storagexray/src/StorageXray.App/bin/Release/net10.0-windows/StorageXray.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:03.63
+
+The scanner core is unchanged; prior core test results above remain applicable.
+Windows visual confirmation of this patch is still pending.
